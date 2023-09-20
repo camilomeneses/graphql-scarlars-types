@@ -1,0 +1,18 @@
+#importaciones
+scalar BigDecimal
+scalar LocalDateTime
+
+# ! representa unique
+
+type Product{
+    id: ID!
+    title: String
+    isOnSale: Boolean
+    weight: Float
+    price: BigDecimal
+    dateCreated: LocalDateTime
+}
+
+type Query{
+    allProducts: [Product]!
+}
